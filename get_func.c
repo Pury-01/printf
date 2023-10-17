@@ -3,7 +3,7 @@
 /**
  * get_func - fetches the right function for the corresponding specifier
  * @specifier: the place holder for a given datatype
- * Return: the corresponding function for a specifier
+ * Return: Nothing
  */
 
 void (*get_func(char specifier))(va_list args)
