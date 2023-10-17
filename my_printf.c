@@ -3,7 +3,7 @@
 /**
  * _printf - prints a format string to the standard output
  * @format: string to be printed
- * Return: nmuber of characters primted
+ * Return: nmuber of characters printed
  */
 
 int _printf(const char *format, ...)
@@ -30,7 +30,7 @@ int _printf(const char *format, ...)
 			}
 			if (*format == '%')
 			{
-				write(1, &%%, 2);
+				write(1, "%%", 2);
 				count++;
 			}
 		}
