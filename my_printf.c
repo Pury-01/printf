@@ -15,6 +15,8 @@ int _printf(const char *format, ...)
 
 	while (*format)
 	{
+		if (format == NULL)
+			write(1, "Error\n", 5);
 		if (*format == '%')
 		{
 			format++;
