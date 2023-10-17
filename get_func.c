@@ -6,7 +6,7 @@
  * Return: the corresponding function for a specifier
  */
 
-char (*get_func(char specifier))(va_list args)
+void (*get_func(char specifier))(va_list args)
 {
 	if (specifier == 'c')
 	{
