@@ -16,14 +16,6 @@ void (*get_func(char specifier))(va_list args)
 	{
 		return (s_handler);
 	}
-	if (specifier == 'd')
-	{
-		return (d_handler);
-	}
-	if (specifier == 'i')
-	{
-		return (i_handler);
-	}
 	else
 	{
 		return (NULL);
