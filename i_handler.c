@@ -8,15 +8,13 @@
  */
 void i_handler(va_list args)
 {
-
 	int num;
-	int i;
 	int length = 0;
 	int j = 0;
 	char temp;
 	char buffer[20];
 
-	i = va_arg(args, int);
+	int i = va_arg(args, int);
 
 	if (num == 0)
 	{
@@ -31,7 +29,7 @@ void i_handler(va_list args)
 		while (num > 0)
 		{
 			buffer[length++] = '0' + (num % 10);
-			num / == 10;
+			num / 10;
 		}
 		for (j = 0; j < length / 2; j++)
 		{
