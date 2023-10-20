@@ -9,13 +9,12 @@
 void d_handler(va_list args)
 {
 	int num;
-	int d;
 	int length = 0;
 	int i = 0;
 	char temp;
 	char buffer[20];
 
-	d = va_arg(args, int);
+	int d = va_arg(args, int);
 	if (num == 0)
 	{
 		buffer[length++] = '0';
@@ -29,7 +28,7 @@ void d_handler(va_list args)
 		while (num > 0)
 		{
 			buffer[length++] = '0' + (num % 10);
-			num / == 10;
+			num / 10;
 		}
 		for (i = 0; i < length / 2; i++)
 		{
